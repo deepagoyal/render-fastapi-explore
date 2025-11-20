@@ -1,3 +1,6 @@
+previews:
+  generation: automatic
+
 services:
   # A Docker web service
   - type: web
