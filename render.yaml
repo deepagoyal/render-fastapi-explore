@@ -1,12 +1,13 @@
+# auto previews
 previews:
   generation: automatic
 
 services:
   # A Docker web service
   - type: web
-    name: fastapi-example
+    name: fastapi-explore-app
     runtime: python
-    plan: free
+    plan: pro
     autoDeploy: false
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
